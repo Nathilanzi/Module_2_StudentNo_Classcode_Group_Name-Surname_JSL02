@@ -1,30 +1,41 @@
-# [JSL02] Submission: Debug the DOM
+# Fitness Tracker
 
-You will: 
-1. Use the Starter Code Repo, 
-2. Code your solution,
-3. Commit changes to your repo
-3. Submit GitHub Repo Link to LMS [JSL02] Submission Project Tab
+## Overview
+This Fitness Tracker application allows users to track their workouts, set fitness goals, monitor water intake, and submit meal plans. It provides a user-friendly interface for managing fitness-related activities.
 
-# Debugging Duplicate Goals
+### Welcome Message
+Upon loading the application, users are greeted with a welcome message displaying the current date and welcoming them to the fitness tracker.
 
-**Debugging Brief:**
-In the current code, users can add the same fitness goal multiple times, leading to duplicate entries in the goal list. To enhance the user experience and prevent duplicates, you need to implement a check to ensure that the same goal cannot be added more than once. If a duplicate goal is detected, it should NOT be added to the list.
+### Adding Workouts
+Users can add their workout routines by entering details in the input field and clicking the submit button. The entered workout is then displayed in a list format.
 
-![alt text](JSL02_Solution.png)
+### Setting Fitness Goals
+Users can set fitness goals by entering their goals in the input field and clicking the submit button. The application checks for duplicate goals and prevents them from being added to the list. Goals are displayed in a list format.
 
-**Issue:** Users can add duplicate fitness goals.
-**Debugging Task:** Prevent users from adding the same goal more than once.
+### Tracking Water Intake
+Users can track their water intake by clicking on the increase or decrease buttons. The application displays the total water intake in glasses.
 
-- The goal is to prevent users from adding duplicate fitness goals to the list.
-- You need to check if the goal being added already exists in the list before appending it.
-- Display an alert to inform the user if they are trying to add a duplicate goal.
-- Focus on the code structure within the function and how to handle duplicates.
+### Updating Progress Charts
+The application updates progress charts for workout and calorie intake based on user activities.
 
-**Explanation:**
-1. We first retrieve all the existing goals in the `goalList` using `querySelectorAll`.
-2. Then, we iterate through each existing goal and compare its text content with the new goal input.
-3. If a duplicate is found, we display an alert message and exit the function using `return` to prevent the duplicate goal from being added.
-4. If no duplicate is found, we proceed to create and add the new goal as before.
+### Theme Toggle
+Users can toggle between light and dark themes using the theme toggle button.
 
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pwVxGLDUW
+### Submitting Meal Plans
+Users can submit their meal plans using the meal plan form. Upon submission, a success message is displayed.
+
+## Areas of Mastery
+- DOM manipulation in JavaScript
+- Event handling and form submission
+- Toggle functionality for theme switch
+
+## Challenges Faced
+- Preventing duplicate fitness goals
+- Ensuring accurate tracking of water intake
+
+## Areas for Improvement
+- Enhancing user feedback for successful actions
+- Implementing data persistence for saved workouts and goals
+
+## Overall Learning Experience
+The development of the Fitness Tracker application provided valuable insights into DOM manipulation, event handling, and user interface design. While certain challenges were encountered during implementation, they served as opportunities for learning and improvement. Overall, the experience contributed to a deeper understanding of JavaScript programming and web development principles.
